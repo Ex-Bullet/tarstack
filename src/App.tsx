@@ -7,11 +7,9 @@ import Loader from './presentation/components/Loader/Loader';
 const App = () => {
   const [loading, setLoading] = useState(true);
   const [flights, setFlights] = useState<any[]>([]);
-  const [totalPages, setTotalPages] = useState(1);
 
-  const handleSearch = (fetchedFlights: any[], totalPages: number) => {
+  const handleSearch = (fetchedFlights: any[]) => {
     setFlights(fetchedFlights);
-    setTotalPages(totalPages);
   };
 
   useEffect(() => {
