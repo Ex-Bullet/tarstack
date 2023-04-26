@@ -1,0 +1,31 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1030;
+  background-color: #222b79;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  height: 60px;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  color: #ffff;
+  margin-left: 20px;
+  padding-top: 5px;
+}
+
+.navbar-logo:hover {
+  color: #fff;
+}
+
+.navbar-image {
+  width: 50px;
+}
+
+#logo {
+  font-size: larger;
+  font-weight: bolder;
+  padding-left: 10px;
+}

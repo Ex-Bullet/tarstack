@@ -1,0 +1,7 @@
+.flight-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  margin: auto;
+  margin-top: 50px;
+}

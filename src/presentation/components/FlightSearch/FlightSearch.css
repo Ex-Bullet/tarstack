@@ -1,0 +1,23 @@
+.flight-search-container {
+    display: grid;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.flight-search {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.flight-search input,
+.flight-search button {
+  padding: 0.5rem;
+  margin-right: 1rem;
+}
+
+.datepicker {
+  cursor: pointer;
+}

@@ -1,0 +1,12 @@
+.pagination {
+  display: flex;
+  margin-top: 22px;
+  align-items: center;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
