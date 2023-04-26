@@ -4,10 +4,10 @@ import DatePicker from 'react-datepicker';
 import Pagination from '../Pagination/Pagination';
 import 'react-datepicker/dist/react-datepicker.css';
 import './FlightSearch.css';
-import { registerLocale } from "react-datepicker";
+import { registerLocale } from 'react-datepicker';
 import { subDays } from 'date-fns';
 import fr from 'date-fns/locale/fr';
-registerLocale('fr', fr)
+registerLocale('fr', fr);
 
 interface FlightSearchProps {
   onSearch: (flights: any[], totalPages: number) => void;
@@ -48,13 +48,13 @@ const FlightSearch: React.FC<FlightSearchProps> = ({ onSearch }) => {
           type="text"
           placeholder="Airline"
           value={airline}
-          onChange={(e) => setAirline(e.target.value)}
+          onChange={e => setAirline(e.target.value)}
         />
         <input
           type="text"
           placeholder="Flight Number"
           value={flightNumber}
-          onChange={(e) => setFlightNumber(e.target.value)}
+          onChange={e => setFlightNumber(e.target.value)}
         />
         <DatePicker
           className="datepicker"

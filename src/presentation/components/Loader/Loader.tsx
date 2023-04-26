@@ -6,7 +6,7 @@ const Loader: React.FC = () => {
   return (
     <div className="loader">
       <div className="plane">
-      <img src={plane} className="navbar-image" alt="plane" />
+        <img src={plane} className="navbar-image" alt="plane" />
       </div>
     </div>
   );
