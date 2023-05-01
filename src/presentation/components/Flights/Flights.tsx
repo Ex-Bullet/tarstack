@@ -1,5 +1,5 @@
 import React from 'react';
-import FlightItem from '../FlightItem/FlightItem';
+import FlightItem from '../Flight/Flight';
 import './FlightList.css';
 
 interface FlightListProps {
@@ -10,7 +10,7 @@ const FlightList: React.FC<FlightListProps> = ({ flights }) => {
   return (
     <div className="container">
       <div className="flight-list">
-        {flights.map(flight => (
+        {flights.map((flight) => (
           <FlightItem key={flight.flight.iata} flight={flight} />
         ))}
       </div>
