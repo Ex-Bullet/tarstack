@@ -56,7 +56,7 @@ Format code
 
 To run this project, you will need to add the following environment variables to your .env file
 
-`API_KEY`
+`VITE_API_ACCESS_KEY`
 
 available on https://aviationstack.com/dashboard
 
@@ -64,7 +64,7 @@ available on https://aviationstack.com/dashboard
 
 ## Tech Stack
 
-**Client:** React, Typescript, CSS, Axios, react-datepicker, eslint, prettier
+**Client:** React, Vite, Typescript, CSS, Axios, react-datepicker, eslint, prettier
 
 **Server:** API REST Aviationstack
 
