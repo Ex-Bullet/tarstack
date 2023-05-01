@@ -6,18 +6,17 @@ export const getFlights = async (
   flightNumber: string,
   date: Date,
   page: number,
-) => {
-  const limit = 10;
-  const offset = (page - 1) * limit;
-
+  limit: number = 10,
+  offset: number = (page - 1) * limit,
+): Promise<{ flights: any[]; totalPages: number }> => {
   const response = await axios.get(`http://api.aviationstack.com/v1/flights`, {
     params: {
       access_key: API_ACCESS_KEY,
       airline_name: airline,
       flight_number: flightNumber,
       date: date.toISOString().split('T')[0],
-      limit: limit,
-      offset: offset,
+      limit,
+      offset,
     },
   });
 
